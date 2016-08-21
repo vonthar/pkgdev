@@ -1,0 +1,29 @@
+{
+  "name": "@vonthar/pkgdev",
+  "version": "0.0.1",
+  "description": "Personal configuration files for building npm packages.",
+  "keywords": [],
+  "license": "UNLICENSED",
+  "author": {
+    "name": "vonthar",
+    "email": "vonthar@tfwno.gf"
+  },
+  "homepage": "https://github.com/vonthar/pkgdev",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vonthar/pkgdev.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vonthar/pkgdev/issues"
+  },
+  "main": "src/main.js",
+  "scripts": {
+    "test": "",
+    "preversion": "git add .",
+    "postversion": "git push -u origin master && git push origin master --tags"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  }
+}
