@@ -1,5 +1,6 @@
-{{#module}}node-{{name}}
-===============================================================================
+{{#module}}
+node-{{name}}
+==========================================================================================
 [![NPM Package](https://img.shields.io/npm/v/{{name}}.svg)](https://www.npmjs.org/package/{{name}})
 [![Build Status](https://travis-ci.org/vonthar/node-{{name}}.svg?branch=master)](https://travis-ci.org/vonthar/node-{{name}}/branches)
 [![Coverage Status](https://coveralls.io/repos/github/vonthar/node-{{name}}/badge.svg?branch=master)](https://coveralls.io/github/vonthar/node-{{name}}?branch=master)
@@ -15,7 +16,18 @@ API Reference
 -------------
 {{>member-index~}}
 {{>members~}}
+{{/module}}
+
+{{#class scope="global"}}
+{{>docs}}
+{{/class}}
+
+{{#functions scope="global"}}
+{{>heading-indent}}Callbacks
+{{depthIncrement}}
+{{>docs}}
+{{/functions}}
 
 License
 -------
-MPL 2.0{{/module}}
+MPL 2.0
