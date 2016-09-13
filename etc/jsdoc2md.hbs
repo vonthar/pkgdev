@@ -6,17 +6,23 @@ node-{{name}}
 [![Coverage Status](https://coveralls.io/repos/github/vonthar/node-{{name}}/badge.svg?branch=master)](https://coveralls.io/github/vonthar/node-{{name}}?branch=master)
 [![Dependency Status](https://david-dm.org/vonthar/node-{{name}}.svg)](https://david-dm.org/vonthar/node-{{name}})
 
-{{>body~}}
+{{>summary~}}
+{{>examples~}}
 
 Installation
 ------------
 `npm i {{name}}`
 
+{{#if description}}
+Usage
+-----
+{{>description~}}
+{{/if}}
+
 API Reference
 -------------
 {{>member-index~}}
 {{>members~}}
-{{/module}}
 
 {{#classes scope="global"}}
 {{>docs}}
@@ -31,3 +37,4 @@ API Reference
 License
 -------
 MPL 2.0
+{{/module}}
