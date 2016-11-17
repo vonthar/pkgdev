@@ -1,6 +1,6 @@
 {
   "name": "@vonthar/pkgdev",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Personal configuration files for building npm packages.",
   "keywords": [],
   "license": "UNLICENSED",
@@ -20,7 +20,7 @@
   "scripts": {
     "test": "",
     "preversion": "git add .",
-    "postversion": "git push -u origin master && git push origin master --tags"
+    "postversion": "git push -u origin master"
   },
   "dependencies": {
   },
